@@ -1,0 +1,6 @@
+<h1>Increment/Decrement Example</h1>
+
+<h3>Parent Component</h3>
+<h2>Counter Value: {{ counter }}</h2>
+
+<app-counter [counterValue]="counter" (counterChange)="updateCounter($event)"></app-counter>

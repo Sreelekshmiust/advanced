@@ -1,0 +1,17 @@
+<h1>Employee List</h1>
+
+<table>
+  <tr>
+    <th>Employee ID</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let employee of employees">
+    <td>{{ employee.id }}</td>
+    <td>{{ employee.name }}</td>
+    <td>{{ employee.email }}</td>
+    <td><button (click)="selectEmployee(employee)"> Click</button></td>
+  </tr>
+</table>
+
+<app-employeedetails [selectedEmployee]="selectedEmployee"></app-employeedetails>
